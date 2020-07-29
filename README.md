@@ -41,11 +41,6 @@ http://127.0.0.1/admin/app/article/list
 http://127.0.0.1/admin/app/article/create
 
 
-See pictures
-
-
-
-
 Frontend:
 
 Link: http://127.0.0.1/
