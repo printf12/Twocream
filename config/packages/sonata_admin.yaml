@@ -1,0 +1,42 @@
+sonata_admin:
+    title: 'Project'
+    dashboard:
+        blocks:
+            - { type: sonata.admin.block.admin_list, position: left}
+    #        groups:
+    #            ontop:
+    #                label:                ~
+    #                label_catalogue:      ~
+    #                items:
+    #                    - admin.frontenduser
+    #            chat:
+    #                label: Chat
+    #                items:
+    #                    - admin.chat.topic
+    #                    - admin.chat.thread
+    #            cms:
+    #                label: CMS
+    #                items:
+    #                    - admin.faq.topic
+    #                    - admin.faq.question
+    #                    - admin.page
+    #                    - admin.blog.article
+
+    #            on_top:
+    #                keep_open: true
+
+    #            sonata.admin.group.content:
+    security:
+        handler: sonata.admin.security.handler.role
+        role_admin: ROLE_ADMIN
+        role_super_admin: ROLE_SUPER_ADMIN
+    assets:
+        extra_javascripts:
+            - 'bundles/fosckeditor/ckeditor.js'
+    options:
+        default_group: CMS
+
+sonata_block:
+    blocks:
+        sonata.admin.block.admin_list:
+            contexts: [admin]

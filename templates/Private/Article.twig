@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+{% block title %}Articles Pages{% endblock %}
+{% block body %}
+    <div class="article-module col-md-12 ">
+        <div id="accordion">
+            <div class="panel list-group">
+                <!-- panel class must be in -->
+                {% for article in articles %}
+                    <a href="#article-{{ article.id }}" data-parent="#accordion" data-toggle="collapse" class="list-group-item">
+                        <h4>{{ article.title }}</h4>
+                    </a>
+                    <div class="collapse" id="article-{{ article.id }}">
+                        {{ article.text }}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+
+

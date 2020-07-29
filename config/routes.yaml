@@ -1,0 +1,15 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+sonata_user_admin_security:
+  resource: '@SonataUserBundle/Resources/config/routing/admin_security.xml'
+  prefix: /admin
+
+sonata_user_admin_resetting:
+  resource: '@SonataUserBundle/Resources/config/routing/admin_resetting.xml'
+  prefix: /admin/resetting
+
+# the "app_lucky_number" route name is not important yet
+app_lucky_number:
+  path: /
+  controller: App\Controller\homeController::index
