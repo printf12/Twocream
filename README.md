@@ -1,5 +1,6 @@
 # twocream
-
+Tech used: Smyfony ( sonata admin bundle + fosuer bundle ) Bootstrap + Sass + Jquery
+Docker with 5 containers (apache,phpmyadmin,php,mysql,maildev)
 
 
 
